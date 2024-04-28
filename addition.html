@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestion des Employés</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="GROUPE4.png" alt="Logo">
+            </div>
+            <h2>Calculatrice</h2>
+            <nav>
+                <ul>
+                    <li><a href="addition.html"> + Addition</a></li>
+                    <li><a href="multiplication.html"> X Multiplication</a></li> <br>
+                    <li><a href="soustraction.html"> - Soustraction</a></li>
+                    <li><a href="division.html">  / Division</a></li>
+                    <li><a href="logout.php"> Se Déconnecter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Saisisez les nombres</h1>
+    <form id="numberForm">
+        <label for="num1">Premier nombre:</label>
+        <input type="number" id="ad1" required>
+        <label for="num2">Deusiéme nombre:</label>
+        <input type="number" id="ad2" required>
+        <label for="num3">Troisiéme nombre:</label>
+        <input type="number" name="" id="ad3">
+        <button type="submit">Calcule</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
+
+
