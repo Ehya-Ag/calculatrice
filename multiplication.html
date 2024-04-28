@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
     <title>Gestion des Employés</title>
 </head>
 <body>
-    <div class="dashboard-container">
+    <!-- <div class="dashboard-container"> -->
         <div class="sidebar">
             <div class="logo">
                 <img src="GROUPE4.png" alt="Logo">
@@ -16,28 +15,54 @@
             <h2>Calculatrice</h2>
             <nav>
                 <ul>
-                    <li><a href="addition.html"> + Addition</a></li>
-                    <li><a href="multiplication.html"> X Multiplication</a></li> <br>
-                    <li><a href="soustraction.html"> - Soustraction</a></li>
-                    <li><a href="division.html">  / Division</a></li>
-                    <li><a href="logout.php"> Se Déconnecter</a></li>
+                    <li>
+                        <a href="index.html"> Accueil</a>
+                    </li>
+                    <li>
+                        <a href="addition.html">
+                            <img src="img/plus.png" alt=""> 
+                         Addition
+                        </a>
+                    </li>
+                    <li>
+                        <a href="multiplication.html">
+                            <img src="img/fois.png" alt="">
+                            Multiplication
+                        </a>
+                    </li>
+                    <li>
+                        <a href="soustraction.html">
+                            <img src="img/soustraction.png" alt="">
+                            Soustraction
+                        </a>
+                    </li>
+                    <li>
+                        <a href="division.html">
+                            <img src="img/division.png" alt="">
+                            Division
+                        </a>
+                    </li>
+                    <!-- <li><a href="logout.php"> Se Déconnecter</a></li> -->
                 </ul>
             </nav>
         </div>
 
-        <div class="content">
-            <h1>Saisisez les nombres</h1>
-    <form id="numberForm">
-        <label for="num1">Premier nombre:</label>
-        <input type="number" id="mul1" required>
-        <label for="num2">Deusiéme nombre:</label>
-        <input type="number" id="mul2" required>
-        <button type="submit">Calcule</button>
-    </form>
-    <div id="result"></div>
-    <script src="script.js"></script>
+        <div class="container">
+            <h1>Multiplication</h1>
+            <form id="numberForm">
+                <!-- <label for="num1">Premier nombre:</label> -->
+                <input type="number" id="mul1" name="mul1" placeholder="nombre1" required>
+                <!-- <label for="num2">Deusiéme nombre:</label> -->
+                <input type="number" id="mul2" name="mul2" placeholder="nombre2" required>
+                <input type="number" id="mul3" name="mul3" placeholder="nombre3" required>
+                <div>
+                    <button type="submit">Calcule</button>
+                </div>
+            </form>
+            <p id="result"></p>
         </div>
-    </div>
+    <!-- </div> -->
+    <script src="script.js"></script>
 </body>
 </html>
 
