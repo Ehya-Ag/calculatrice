@@ -1,6 +1,3 @@
-L'application nous permet d'effectuer des calcules basique
-Avec la page principale appele index
-Elle nous affiche quatres options ullistre par des formes de calcule nous voullions effectuer
-Une fois clic sur le choix nous serons reedirige par sa page par exemple si on clic sur Addition 
-nous accedons à la page qui nous permettra d'effectuer l'addition de trois nombre dont le troisieme choix est optionnel n'est pas oligatoire.
-Une fois saisi les nombre y'a un boutton calculer en bas qui nous affichera un resultat dans le cadre d'en bas.
+L'application vous permet d'effectuer des calculs basiques à travers sa page principale appelée "index". Sur cette page, vous trouverez quatre options, chacune représentant un opérateur de calcul que vous souhaitez effectuer. En sélectionnant l'une de ces options, vous serez redirigé vers une page spécifique. Par exemple, en cliquant sur "Addition", vous accéderez à la page permettant d'effectuer une addition de trois nombres, dont le troisième choix est facultatif.
+
+Une fois que vous avez saisi les nombres, un bouton "Calculer" en bas de la page vous permettra d'obtenir le résultat dans le cadre situé en dessous.
