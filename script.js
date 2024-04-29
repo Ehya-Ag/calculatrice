@@ -37,16 +37,33 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
 
 document.getElementById('numberForm').addEventListener('submit', function(event) {
     event.preventDefault();
+
+    // Récupérer les valeurs des champs de saisie
     const mul1 = parseFloat(document.getElementById('mul1').value);
     const mul2 = parseFloat(document.getElementById('mul2').value);
+    let mul3 = parseFloat(document.getElementById('mul3').value);
 
-    // Calculer le résultat
-    const result = mul1 * mul2;
+    // Vérifier si mul3 est NaN (non défini ou vide)
+    if (isNaN(mul3)) {
+        // Si mul3 est NaN, le définir à 0
+        mul3 = 0;
+    }
+
+    // Calculer le résultat en fonction de mul3
+    let result;
+    if (mul3 === 0) {
+        // Si mul3 est 0, effectuer la multiplication de mul1 et mul2 seulement
+        result = mul1 * mul2;
+    } else {
+        // Sinon, effectuer la multiplication de mul1, mul2 et mul3
+        result = mul1 * mul2 * mul3;
+    }
 
     // Afficher le résultat dans la zone de résultat
     const resultDiv = document.getElementById('result');
-    resultDiv.textContent = 'Resultat: ' + result;
+    resultDiv.textContent = 'Résultat: ' + result;
 });
+
 // division.js
 
 document.getElementById('numberForm').addEventListener('submit', function(event) {
